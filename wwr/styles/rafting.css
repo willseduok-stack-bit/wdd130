@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1d3557;
+    --secondary-color: #a8dadc;
+    --accent1-color: #457b9d;
+    --accent2-color: #f1faee;
+    --heading-font: Georgia, serif;
+    --body-font: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    background-color: #ffffff;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+header img {
+    width: 110px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 10px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+    background-color: rgba(29, 53, 87, 0.8);
+    color: white;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(241, 250, 238, 0.85);
+    padding: 20px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 15px;
+    border: 3px solid white;
+}
+
+section {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: var(--accent2-color);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--accent1-color);
+    font-family: var(--heading-font);
+}
+
+section p {
+    line-height: 1.6;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+}
+
+.socialmedia img {
+    width: 35px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
