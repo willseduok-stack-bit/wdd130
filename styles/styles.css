@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: darkblue;
     --text-color-light: white;
@@ -29,29 +35,46 @@ h1 {
 
 main {
     max-width: 840px;
+    margin: 0 auto;
 }
 
-main img {
+.profile-img {
     width: 150px;
     height: auto;
     border: var(--border-default);
     padding: 2px;
     box-shadow: 0 0 30px var(--shadow-color);
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 aside {
     width: 20rem;
-    margin: var(--spacing-medium);
-    border: var(--border-light);
-    padding: var(--spacing-medium);
-    background-color: var(--background-light);
-    color: var(--text-color-dark);
+    margin: 1rem auto;
     text-align: center;
+    position: relative;
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--text-color-light);
+    padding: 5px;
+}
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+    clear: both;
 }
 
 p {
@@ -59,7 +82,7 @@ p {
 }
 
 footer {
-    margin-top: var(--spacing-medium);
-    border-top: var(--border-default);
+    margin-top: 1rem;
+    border-top: 1px solid #000;
     text-align: center;
 }
