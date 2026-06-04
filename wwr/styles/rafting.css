@@ -27,12 +27,14 @@ footer {
     margin: 0 auto;
 }
 
+/* FIX: header spacing like wireframe */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     padding: 20px;
     background-color: var(--secondary-color);
+    margin-bottom: 20px;
 }
 
 header img {
@@ -55,6 +57,8 @@ nav a {
 
 .hero {
     position: relative;
+    margin-bottom: 40px;
+    /* FIX: spacing below hero */
 }
 
 .hero img {
@@ -78,25 +82,26 @@ nav a {
 
 .hero article {
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     left: 20px;
     right: 20px;
     background-color: rgba(241, 250, 238, 0.9);
     padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 120px;
-    gap: 15px;
-    align-items: center;
+    display: block;
 }
 
 .hero article img {
     width: 120px;
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
     border: 3px solid white;
 }
 
 section {
-    margin: 30px 0;
-    padding: 20px;
+    margin: 40px 0;
+    padding: 25px;
+    /* FIX: wireframe spacing consistency */
     background-color: var(--accent2-color);
 }
 
@@ -105,10 +110,6 @@ section h2 {
     margin-bottom: 20px;
     color: var(--accent1-color);
     font-family: var(--heading-font);
-}
-
-.history {
-    text-align: center;
 }
 
 .history-grid {
@@ -133,7 +134,6 @@ section h2 {
     height: 150px;
     object-fit: cover;
     display: block;
-    border: 1px solid #000;
 }
 
 figcaption {
